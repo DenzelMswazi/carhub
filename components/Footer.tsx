@@ -13,6 +13,13 @@ const Footer = () => {
             height={18}
             className="object-contain"
           />
+          <p className="text-base text-gray-700">Carhub 2023 <br />
+          All rights reserved &copy;
+          </p>
+        </div>
+
+        <div className="footer__links">
+
         </div>
       </div>
     </footer>
