@@ -2,6 +2,7 @@
 import { Combobox, Transition } from "@headlessui/react";
 import { SearchManufacturerProps } from "@/types";
 import Image from 'next/image';
+import { useState } from 'react';
 
 const SearchManufacturer = ({
   manufacturer,
@@ -32,6 +33,15 @@ const SearchManufacturer = ({
             alt="Car Logo"
             />
           </Combobox.Button>
+
+          <Combobox.Input className="search-manufacturer__input"
+           placeholder="Volkswagen"
+           displayValue={(manufacturer: string) => manufacturer}
+           onChange={(e)  => setQuery(e.target.value)}
+           />
+           ,<Transition>
+            
+           </Transition>
         </div>
       </Combobox>
     </div>
