@@ -95,4 +95,4 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
   );
 };
 
-export default SearchManufacturer;
+export default SearchManufactur
