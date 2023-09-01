@@ -1,6 +1,8 @@
 import Image from "next/image";
-import { CustomFilter, Hero, SearchBar } from "@/components";
-
+import { fetchCars } from "@utils";
+import { HomeProps } from "@types";
+import { fuels, yearsOfProduction } from "@constants";
+import { CustomFilter, Hero, SearchBar, ShowMore, CarCard } from "@/components";
 
 export default function Home() {
   return (
@@ -13,12 +15,12 @@ export default function Home() {
           <p>Explore the Cars you might like</p>
         </div>
         <div className="home__filters">
-        <SearchBar />
+          <SearchBar />
 
-        <div className="home__filer-container">
-          <CustomFilter title="fuel"/>
-          <CustomFilter title="year" />
-        </div>
+          <div className="home__filer-container">
+            <CustomFilter title="fuel" />
+            <CustomFilter title="year" />
+          </div>
         </div>
       </div>
     </main>
