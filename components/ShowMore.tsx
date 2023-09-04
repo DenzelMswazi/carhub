@@ -1,4 +1,4 @@
-"use state";
+"use client";
 
 import { useRouter } from "next/navigation";
 
